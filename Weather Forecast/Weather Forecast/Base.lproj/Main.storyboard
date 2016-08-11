@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather_Forecast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0EM-oy-RlN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Weather Forecast" id="u8a-ky-FdP"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBb-Co-ks7">
+                                <rect key="frame" x="230" y="56" width="141" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="FYi-2A-Nkx"/>
+                                    <constraint firstAttribute="width" constant="141" id="sOI-ck-4DQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uaV-WF-7dX">
+                                <rect key="frame" x="164" y="85" width="272" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="Uaj-Rb-hQe"/>
+                                    <constraint firstAttribute="height" constant="30" id="sJ4-dh-rA2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="large_happysun-and-clouds.png" translatesAutoresizingMaskIntoConstraints="NO" id="nK3-ek-M0B">
+                                <rect key="frame" x="20" y="267" width="560" height="285"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="Yfa-gv-Ubl"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4A-MA-fD4">
+                                <rect key="frame" x="274" y="114" width="53" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DuD-JW-ooU"/>
+                                    <constraint firstAttribute="width" constant="53" id="FrS-uz-PfF"/>
+                                </constraints>
+                                <state key="normal" title="Search!"/>
+                                <connections>
+                                    <action selector="searchWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="smp-u5-bZd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kn-5e-vHd">
+                                <rect key="frame" x="20" y="145" width="569" height="104"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="efz-bA-u7t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.42745098040000001" green="0.7843137255" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nBb-Co-ks7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cjl-YD-xb5"/>
+                            <constraint firstItem="uaV-WF-7dX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FEg-8s-dXy"/>
+                            <constraint firstItem="0EM-oy-RlN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="KBI-qg-Xk8"/>
+                            <constraint firstItem="nK3-ek-M0B" firstAttribute="top" secondItem="0Kn-5e-vHd" secondAttribute="bottom" constant="24" id="Sqw-L0-8N1"/>
+                            <constraint firstItem="0EM-oy-RlN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TnF-4A-1Bg"/>
+                            <constraint firstItem="uaV-WF-7dX" firstAttribute="top" secondItem="nBb-Co-ks7" secondAttribute="bottom" constant="8" id="VOs-f2-R9a"/>
+                            <constraint firstItem="0Kn-5e-vHd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vfk-fs-YKf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0EM-oy-RlN" secondAttribute="trailing" constant="-20" id="boP-hh-ekH"/>
+                            <constraint firstItem="0EM-oy-RlN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="fpv-Zy-CAa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Kn-5e-vHd" secondAttribute="trailing" constant="-9" id="gaE-YV-GpB"/>
+                            <constraint firstItem="nK3-ek-M0B" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="juV-Pe-dJK"/>
+                            <constraint firstItem="0Kn-5e-vHd" firstAttribute="top" secondItem="uaV-WF-7dX" secondAttribute="bottom" constant="24" id="rKj-n1-Xto"/>
+                            <constraint firstItem="A4A-MA-fD4" firstAttribute="top" secondItem="nBb-Co-ks7" secondAttribute="bottom" constant="37" id="sAl-Gj-AH2"/>
+                            <constraint firstItem="A4A-MA-fD4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5K-e0-2fq"/>
+                            <constraint firstItem="nK3-ek-M0B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yGZ-0V-ZEe"/>
+                            <constraint firstItem="nBb-Co-ks7" firstAttribute="top" secondItem="0EM-oy-RlN" secondAttribute="bottom" constant="12" id="zg3-38-cli"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityToSearch" destination="uaV-WF-7dX" id="j6h-q3-ZVk"/>
+                        <outlet property="weather" destination="0Kn-5e-vHd" id="PHa-pE-9bZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="large_happysun-and-clouds.png" width="677" height="501"/>
+    </resources>
+</document>
